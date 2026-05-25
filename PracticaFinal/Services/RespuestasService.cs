@@ -17,6 +17,8 @@ namespace Final.Services
         {
             return await _context.Pregunta.Where(e => e.estado == 1).ToListAsync();
         }
+
+        public async Task<Respuestas?> getById(Guid id) => await _context.Respuesta.FindAsync(id);
         public async Task<Respuestas> Create(Respuestas newRespuesta)
         {
             //Agregamos el registro a la lista
