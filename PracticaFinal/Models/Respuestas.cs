@@ -11,7 +11,7 @@ namespace PracticaFinal.Models
 
         [Required(ErrorMessage = "Debe ingresar el contenido de la respuesta")]
         [MinLength(2, ErrorMessage = "La cantidad mínima es 1")]
-        public string contenido { get; set; }
+        public required string contenido { get; set; }
         //[ForeignKey]
         public Guid PreguntaId { get; set; }
     }
