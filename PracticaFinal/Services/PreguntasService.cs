@@ -2,7 +2,7 @@
 using PracticaFinal.Models;
 using PracticaFinal.Persistence;
 
-namespace Final.Services
+namespace PracticaFinal.Services
 {
     public class PreguntasService : IPreguntasService
     {

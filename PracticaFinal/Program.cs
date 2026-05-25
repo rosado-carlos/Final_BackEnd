@@ -1,8 +1,7 @@
-using Final.Services;
+using PracticaFinal.Services;
 using Microsoft.EntityFrameworkCore;
 using PracticaFinal.Interfaces;
 using PracticaFinal.Persistence;
-using PracticaFinal.Services;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);

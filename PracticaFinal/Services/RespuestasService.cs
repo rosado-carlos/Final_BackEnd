@@ -3,7 +3,7 @@ using PracticaFinal.Models;
 using PracticaFinal.Persistence;
 using System.Runtime.InteropServices.Marshalling;
 
-namespace Final.Services
+namespace PracticaFinal.Services
 {
     public class RespuestasService : IRespuestasService
     {
