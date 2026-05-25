@@ -1,3 +1,4 @@
+using Final.Services;
 using Microsoft.EntityFrameworkCore;
 using PracticaFinal.Interfaces;
 using PracticaFinal.Persistence;
@@ -14,7 +15,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 // Aquí agregamos la inyección de dependencia de nuestros servicios
 // sin esto, los controladores no van a servir ya que no se inyecta el constructor o el objeto
 // que permite ir y llamar la capa lógica que tiene las operaciones CRUD o demás reglas de negocio
-builder.Services.AddScoped<IEventsService, EventsService>();
+builder.Services.AddScoped<IRespuestasService, RespuestasService>();
+builder.Services.AddScoped<IPreguntasService, PreguntasService>();
 builder.Services.AddControllers();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
